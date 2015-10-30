@@ -1,0 +1,250 @@
+﻿<!doctype html>
+<html>
+  <head>
+<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div id="nav">
+
+  <div class="article">
+        <div class="item row">
+          
+          <div class="col-xs-0">&nbsp;</div>
+          <div class="col-xs-3">
+			
+			
+            <p class="title">Wykształcenie</p>
+			
+			
+          </div>
+          <div class="col-xs-12">&nbsp;</div>
+          
+        </div>
+        <div class="description row">
+          <div class="col-xs-1">&nbsp;</div>
+          <div class="col-xs-12">
+            <centre id="Tekst">
+
+			2010-2013 r. - Zespół Szkół Zawodowych w Nasielsku o kierunku Matematyczno- Informatycznym
+			<br /><br />
+			2013-2017 r. – Państwowa Wyższa Szkoła Zawodowa w Ciechanowie na kierunku Informatyka
+
+			</center>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+	
+	
+      <div class="article">
+        <div class="item row">
+          
+          <div class="col-xs-0">&nbsp;</div>
+          <div class="col-xs-3">
+		
+			
+            <p class="title">Doświadczenie Zawodowe</p>
+			
+		
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+          
+        </div>
+        <div class="description row">
+          <div class="col-xs-3">&nbsp;</div>
+          <div class="col-xs-12">
+            
+			<centre id="Tekst">
+			
+
+
+			2014r. - PRZEDSIĘBIORSTWO- PRODUKCYJNO- USŁUGOWE „Jan-POL” ZPCh, stanowisko: konfekcjoner wyrobów gotowych
+			<br /><br />
+			2015r. – Praktyki jako informatyk na Komendzie Powiatowej Policji w Nowym Dworze Mazowieckim.
+
+
+			</center>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="item row">
+          
+          <div class="col-xs-0">&nbsp;</div>
+          <div class="col-xs-3">
+			
+			
+            <p class="title">Umiejętności</p>
+			
+			
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+          
+        </div>
+        <div class="description row">
+          <div class="col-xs-1">&nbsp;</div>
+          <div class="col-xs-12">
+             <centre id="Tekst">
+
+
+			-Biegła obsługa programów graficznych GIMP, Photoshop
+			<br /><br />
+			-Bezwzrokowe pisanie
+			<br /><br />
+			-Praca w zespole
+			<br /><br />
+			-Znajomość języków programowania C++, Java, Python
+			<br /><br />
+			-Znajomość języka HTML
+</center>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="article cone">
+        <div class="item row">
+         
+         <div class="col-xs-0">&nbsp;</div>
+          <div class="col-xs-3">
+			
+			
+            <p class="title">Cechy osobowości</p>
+			
+			
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+          
+        </div>
+        <div class="description row">
+          <div class="col-xs-1">&nbsp;</div>
+          <div class="col-xs-12">
+             <centre id="Tekst">
+
+			-umiejętność komunikacji
+			<br /><br />
+			-punktualność
+			<br /><br />
+			-umiejętność pracy pod presją czasu
+
+			</center>
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="item row">
+          
+          <div class="col-xs-0">&nbsp;</div>
+          <div class="col-xs-3">
+			
+			
+            <p class="title">Zainteresowania</p>
+			
+			
+          </div>
+          <div class="col-xs-4">&nbsp;</div>
+          
+        </div>
+        <div class="description row">
+          <div class="col-xs-1">&nbsp;</div>
+          <div class="col-xs-12">
+           <centre id="Tekst">
+			
+
+
+			-Nowe technologie
+			<br /><br />
+			-Muzyka
+			</center>
+		   
+          </div>
+          <div class="col-xs-3">&nbsp;</div>
+        </div>
+      </div>
+
+
+    </div>
+		
+		
+  <div id="content">
+
+			
+			 
+			 
+			
+
+	<br /><br />
+			<center id="Tekst">Przemysław Wierzbicki</center>
+			<center id="Tekst">adres: Siennica ul. Ogrodowa 34 05-190 Nasielsk</center>
+			<center id="Tekst">tel. 511 403 301</center>
+			<center id="Tekst"><a href="mailto:xxl94@o2.pl">xxl94@o2.pl</a></center>
+			<center id ="Tekst">ur. 19 kwietnia 1994 roku</center>
+			<div id="slajdy">
+			
+			
+			<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		
+		<script type="text/javascript">
+		
+			var numer = Math.floor(Math.random()*5)+1;
+			
+			var timer1 = 0;
+			var timer2 = 0;
+			
+			function ustawslajd(nrslajdu)
+			{
+				clearTimeout(timer1);
+				clearTimeout(timer2);
+				numer = nrslajdu - 1;
+				
+				schowaj();
+				setTimeout("zmienslajd()", 500);
+				
+			}
+			
+			function schowaj()
+			{
+				$("#slider").fadeOut(500);
+			}
+		
+			function zmienslajd()
+			{
+				numer++; if (numer>5) numer=1;
+				
+				var plik = "<img src=\"slajdy/slajd" + numer + ".png\" />";
+				
+				document.getElementById("slider").innerHTML = plik;
+				$("#slider").fadeIn(500);
+				
+				timer1 = setTimeout("zmienslajd()", 4000);
+				timer2 = setTimeout("schowaj()", 3500);
+			
+			}
+			
+		</script>
+		
+	</head>
+	<body onload="zmienslajd()">
+	
+		
+		
+		<div id="slider"></div>
+		</div>
+
+			 
+    </div>
+
+
+	
+	
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="app.js"></script>
+  </body>
+</html>
